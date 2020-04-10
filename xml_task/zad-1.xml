@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<library xmlns="http://www.example.org/Test">
+<?xml-stylesheet type="text/xsl" href="zad-3.xsl"?>
+<library>
     <authors>
         <author>
             <id>1</id>
