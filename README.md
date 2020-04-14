@@ -1,6 +1,6 @@
 # Allegro2020
 
-Simple application for send and receive in JMS.
+Simple application for send and receive message (JMS).
 
 ## Technologies
 
