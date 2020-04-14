@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="library">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="authors">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="author" type="authorType"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="books">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="book" type="bookType"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+        <xs:key name="authorIdKey">
+            <xs:selector xpath="authors/author"/>
+            <xs:field xpath="@id"/>
+        </xs:key>
+        <xs:unique name="authorUniqueId">
+            <xs:selector xpath="authors/author"/>
+            <xs:field xpath="@id"/>
+        </xs:unique>
+        <xs:keyref name='authorIdKeyReference' refer='AuthorIdKey'>
+            <xs:selector xpath='books/book'/>
+            <xs:field xpath='authorId'/>
+        </xs:keyref>
+    </xs:element>
+    <xs:complexType name="authorType">
+        <xs:sequence>
+            <xs:element name="id" type="xs:long" />
+            <xs:element name="firstName" type="xs:string"/>
+            <xs:element name="lastName" type="xs:string"/>
+            <xs:element name="birthDate" type="xs:date"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="bookType">
+        <xs:sequence>
+            <xs:element name="authorId" type="xs:long"/>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="isbn" type="xs:string"/>
+            <xs:element name="isHardcover" type="xs:boolean"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

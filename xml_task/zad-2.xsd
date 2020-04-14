@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="tasks">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="offer">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="author" type="xs:string" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="message" type="xs:string" />
+                <xs:element name="status" type="xs:string" />
+                <xs:element name="scheduledAt" type="xs:string" />
+                <xs:element name="finishedAt" type="xs:string" />
+                <xs:element name="field" type="xs:string" />
+                <xs:element name="errors" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="id" type="xs:string" />
+                            <xs:element name="message" type="xs:string" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

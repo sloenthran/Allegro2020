@@ -1,0 +1,20 @@
+{
+    "tasks": [
+        {
+            "offer": {
+                "id": 8360661338
+            },
+            "message": "",
+            "status": "ERROR",
+            "scheduledAt": "2020-04-01T11:12:49.435Z",
+            "finishedAt": "2020-04-01T11:12:49.761Z",
+            "field": "quantity",
+            "errors": [
+                {
+                    "id": "invalidOffer",
+                    "message": "Offer with given id was not found in the system."
+                }
+            ]
+        }
+    ]
+}

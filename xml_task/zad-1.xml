@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="zad-3.xsl"?>
+<library>
+    <authors>
+        <author>
+            <id>1</id>
+            <firstName>Stephen</firstName>
+            <lastName>King</lastName>
+            <birthDate>1947-07-21</birthDate>
+        </author>
+        <author>
+            <id>2</id>
+            <firstName>Terry</firstName>
+            <lastName>Pratchett</lastName>
+            <birthDate>1948-04-28</birthDate>
+        </author>
+        <author>
+            <id>3</id>
+            <firstName>Dean</firstName>
+            <lastName>Koontz</lastName>
+            <birthDate>1945-07-09</birthDate>
+        </author>
+    </authors>
+    <books>
+        <book>
+            <authorId>1</authorId>
+            <name>The Outsider</name>
+            <isbn>978-1-50118-098-9</isbn>
+            <isHardcover>false</isHardcover>
+        </book>
+        <book>
+            <authorId>2</authorId>
+            <name>Good Omens</name>
+            <isbn>0-575-04800-X</isbn>
+            <isHardcover>true</isHardcover>
+        </book>
+        <book>
+            <authorId>1</authorId>
+            <name>Joyland</name>
+            <isbn>978-1-781-16264-4</isbn>
+            <isHardcover>true</isHardcover>
+        </book>
+        <book>
+            <authorId>3</authorId>
+            <name>The Taking</name>
+            <isbn>978-0553593501</isbn>
+            <isHardcover>true</isHardcover>
+        </book>
+        <book>
+            <authorId>2</authorId>
+            <name>Soul Music</name>
+            <isbn>0-575-05504-9</isbn>
+            <isHardcover>true</isHardcover>
+        </book>
+        <book>
+            <authorId>3</authorId>
+            <name>The Night Window</name>
+            <isbn>9780525484707</isbn>
+            <isHardcover>false</isHardcover>
+        </book>
+        <book>
+            <authorId>2</authorId>
+            <name>Small Gods</name>
+            <isbn>0-06-017750-0</isbn>
+            <isHardcover>false</isHardcover>
+        </book>
+    </books>
+</library>
